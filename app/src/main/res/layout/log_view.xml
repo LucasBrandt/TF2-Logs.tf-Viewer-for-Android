@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/logview_scoreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        
+        <TextView
+            android:id="@+id/logview_bluscore"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:background="#5B818F"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/logview_redscore"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:background="#A75D50"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <!--<View
+        android:id="@+id/logview_titlepad"
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+    </View>
+    <TextView
+        android:id="@+id/logview_title"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:gravity="center">
+    </TextView>
+    <TextView
+        android:id="@+id/logview_map"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center">
+    </TextView>
+    <View
+        android:id="@+id/logview_mappad"
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+    </View>-->
+
+
+    <TableLayout
+        android:id="@+id/logview_tableHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logview_scoreview">
+    </TableLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadeScrollbars="true"
+        android:layout_below="@+id/logview_tableHeader">
+
+        <TableLayout
+            android:id="@+id/logview_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

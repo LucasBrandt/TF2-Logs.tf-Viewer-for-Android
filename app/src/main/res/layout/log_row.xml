@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="80dp" >
+    <!-- name -->
+    <TextView
+        android:layout_width="200dp" />
+    <!-- class -->
+    <TextView
+        android:layout_width="100dp" />
+    <!-- K -->
+    <TextView
+        android:layout_width="100dp" />
+    <!-- A -->
+    <TextView
+        android:layout_width="100dp" />
+    <!-- D -->
+    <TextView
+        android:layout_width="100dp" />
+    <!-- DA/M -->
+    <TextView
+        android:layout_width="100dp" />
+    <!-- DT/M -->
+    <TextView
+        android:layout_width="100dp" />
+
+</TableRow>

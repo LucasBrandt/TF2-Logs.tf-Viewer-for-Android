@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="0.04">
+
+        <ImageView
+            android:id="@+id/playerlist_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="10dp" />
+
+        <View
+            android:id="@+id/playerlist_ref"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/playerlist_image"
+            android:layout_toEndOf="@+id/playerlist_image" />
+
+        <TextView
+            android:id="@+id/playerlist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_above="@+id/playerlist_ref"
+            android:layout_toRightOf="@+id/playerlist_image"
+            android:layout_toEndOf="@+id/playerlist_image" />
+
+        <TextView
+            android:id="@+id/playerlist_numlogs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_toRightOf="@+id/playerlist_image"
+            android:layout_below="@id/playerlist_ref"
+            android:layout_toEndOf="@+id/playerlist_image" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <RelativeLayout
+            android:id="@+id/loglist_imageviewcontainer"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/loglist_imageView"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="10dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_centerVertical="true"
+            android:id="@+id/loglist_mapText"
+            android:layout_toRightOf="@+id/loglist_imageviewcontainer"
+            android:layout_toEndOf="@+id/loglist_imageviewcontainer" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:id="@+id/loglist_titleText"
+            android:layout_toRightOf="@+id/loglist_imageviewcontainer"
+            android:layout_above="@id/loglist_mapText"
+            android:layout_toEndOf="@+id/loglist_imageviewcontainer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_gravity="center"
+            android:id="@+id/loglist_dateText"
+            android:layout_below="@+id/loglist_mapText"
+            android:layout_toRightOf="@+id/loglist_imageviewcontainer"
+            android:layout_toEndOf="@+id/loglist_imageviewcontainer" />
+    </RelativeLayout>
+
+</LinearLayout>
